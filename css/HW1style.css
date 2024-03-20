@@ -1,0 +1,61 @@
+h1 { 
+	text-align:center;
+	 background: -webkit-linear-gradient(left, #FF512F, #F09819);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+	font-family: Cinzel, serif;
+    font-size: 46px;
+}
+
+table, tr, td {
+    border: none;
+}
+
+#who {
+	font-family:"segoe ui";        
+	text-align:right;
+	color: black;
+	font-size: xx-large;
+}
+
+#fmsg{
+	display: "none";
+}
+
+.paragraph {
+	 font-family:"segoe ui";    
+	font-size: 20px;
+	text-align:right;
+	color: black;
+	width:100%;
+}
+#about{
+	text-align: right-side;      
+	width: 50%;
+	
+	
+}
+
+#outer-table { 
+	text-align:center;            
+}
+
+
+.tr-inner { 
+	width: 100%
+}
+
+
+	
+body { 
+	  background: white; 
+}
+
+
+
+#getintouch {                       
+	text-align:center;
+	color: #F99561;
+	font-family: "Guttman Yad-Brush";
+}
+

@@ -1,0 +1,152 @@
+
+table, tr, td {
+    border: none;
+}
+
+
+#c_img{
+	width:75%;
+	height:75%;
+}
+#c_img2{
+	height: 5%;
+	width: 75%;
+}
+#inner-table {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     
+    width: 100%;
+	text-align:right;
+	
+
+}
+
+#social{
+	flex-wrap: nowrap;
+	width: 100%;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: right;
+	color:black;
+	text-align: right;
+}
+
+#tik_black{
+	content: url("media/tiktok-black.png");
+	height: 60%;
+	width: 5%;
+	margin-left: 2%;
+
+}
+
+#inst_black{
+	content: url("media/insta-black.png");
+	height: 60%;
+	width: 5%;
+	margin-left: 2%;
+
+
+}
+
+#tik_black:hover{
+	content: url("media/tiktok-color.png");
+	cursor: pointer;
+
+}
+
+#inst_black:hover{
+	content: url("media/insta-color.png");
+	cursor: pointer;
+
+}
+#contact_line{
+	display: flex;
+	justify-content:right ;
+}
+#c_tel{
+margin-left: 5%;
+}
+#c_email{
+	margin-left: 5%;
+
+}
+
+#contact_line >p> span{
+	font-weight: bold;
+}
+
+#event{
+	text-align:right;
+}
+	
+
+#phonetd{
+	margin-left: 100px;
+}
+
+#nametd{
+	margin-left: 100px;
+
+}
+#insert{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+#getintouch { 
+	text-align:center;
+	color: #F99561;
+	font-family: "Guttman Yad-Brush";
+}
+
+.text_style {
+
+	border:0px solid black;
+	border-bottom-width: 1px;
+	background-color: transparent;
+	width: 95%;
+	height: 50px;
+	margin-bottom: 5px;
+	direction: rtl;
+	color: black;
+}
+.text_style::placeholder{
+	color: black;
+}
+.text_style:focus,:active{
+outline: none;}
+
+#button_style{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: right;
+}
+#b-send {
+	background: -webkit-linear-gradient(left, #FF512F, #F09819);
+	border-style: none;
+	border-radius: 30px;
+	width: 25%;
+	height: 50px;
+	margin-bottom: 5px;
+	direction: rtl;
+	font-size: 18px;
+	color: white;
+	margin-left: 5%;
+}
+#b-clear{
+	text-decoration: underline;
+	color: gray;
+	border: none;
+	background-color: transparent;
+	font-size: 18px;
+}
+#b-send:hover{
+	cursor: pointer;
+}
+#b-clear:hover{
+	cursor: pointer;
+}

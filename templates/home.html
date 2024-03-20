@@ -1,0 +1,142 @@
+<html> 
+	<head> 
+		<title>Besstbar1</title>
+        <link rel="stylesheet" href="general.css">
+	    <link rel="stylesheet" href="HW1style.css">
+		<script src="js/DataHome.js"></script>
+        <script src="js/dbSaveDrinks.js"></script>
+	</head> 
+	
+    <body>
+        <ul>
+            <li>
+                <svg width="60" height="60" viewBox="0 0 200 200">
+                    <!-- Circle -->
+                    <circle cx="100" cy="100" r="80" fill="white" stroke="black" stroke-width="1.5" />
+
+                    <path d="M 90,65 L 150,65 L 120,95 Z" fill="white" stroke="black" stroke-width="1.5" />
+
+                    <!-- Blue Water -->
+                    <path d="M 95,70 L 145,70 L 120,95 Z" fill="#F83600" stroke="black" stroke-width="1.5" />
+
+                    <!-- Umbrella Cocktail -->
+                    <line x1="85" y1="45" x2="115" y2="80" stroke="black" stroke-width="1.5" />
+                    <path d="M 83,43 L 80,60 L 100,40 Z" fill="yellow" stroke="black" stroke-width="1.5" />
+                    <line x1="83" y1="43" x2="95" y2="45" stroke="black" stroke-width="1.5" />
+                    <line x1="83" y1="43" x2="87" y2="53" stroke="black" stroke-width="1.5" />
+
+                    <!-- Line extending downward from the lowest point -->
+                    <line x1="120" y1="95" x2="120" y2="135" stroke="black" stroke-width="1.5" />
+
+                    <!-- Line perpendicular to the downward line -->
+                    <line x1="105" y1="135" x2="135" y2="135" stroke="black" stroke-width="1.5" />
+
+                    <!-- Text "Best bar" in the middle of the circle -->
+                    <text x="53%" y="60%" dominant-baseline="middle" text-anchor="middle" fill="black" font-size="35px">Besst bar</text>
+                </svg>
+
+            </li>
+            <li><a class="active" href="home.html">דף הבית</a></li>
+            <li><a href="events.html">אירועים וסדנאות</a></li>
+            <li><a href="contact.html">צור קשר</a></li>
+        </ul>
+        <h1 id="title"><i>Besstbar-Cocktails</i></h1>
+        <table id="outer-table">
+            <tbody>
+                <tr>
+                    <td> </td>
+                    <td>
+                    </td>
+
+                </tr>
+                <tr>
+
+                    <td id="about">
+                        <h2 id="who">קצת עלינו</h2> </br>
+                        <p class="paragraph">לאחר צבירת ניסיון של שנים בתחום האירועים, הברים וחיי הלילה, באנו לתת את חווית בר הקוקטיילים ברמה הגבוהה ביותר ובטעמים הייחודיים שלנו.</p>
+                        <p class="paragraph">אנחנו כאן בשביל לתת את ה"שואו" שמחפשים בכל אירוע, והכי חשוב, את השקט והנחת שמקבלים מצוות מקצועי.</p>
+                        <p class="paragraph"> בשביל לעשות זאת אנו ניכנס יחד איתכם לפרטים הקטנים ביותר של האירוע: </br>מבניית תפריט שמותאם לאורחים, עיצוב הבר והדקורציה עד לקישוט הקטן שיונח בכוס.</p>
+                        <p class="paragraph"> את העבודה נעשה בחיוך ובשיתוף פעולה מלא, כך שתזכו לחוות אירוע בלתי נשכח!</p>
+
+
+                    </td>
+                    <td>
+                        <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@besstbar" data-unique-id="besstbar" data-embed-type="creator" style="max-width: 600px; min-width: 288px;"> <section> <a target="_blank" href="https://www.tiktok.com/@besstbar?refer=creator_embed">@besstbar</a> </section> </blockquote>
+                        <script async src="https://www.tiktok.com/embed.js"></script>
+                    </td>
+
+
+                </tr>
+            </tbody>
+        </table>
+        <table>
+            <tr>
+                <td>
+                </td>
+
+            </tr>
+        </table>
+
+        <div id="overlay"></div>
+        <div id="popup" class="popup" onload="resetPopup()">
+            <div class="popup-content">
+                <span class="close" onclick="closePopup()">&times;</span>
+                <img id="popup-img" alt="Popup Image">
+            </div>
+        </div>
+        <form>
+
+
+            <table id="inner-table">
+                <tr width="100%;">
+                    <td>
+                        <center>
+                            <h2 id="talkwith">דברו איתנו</h2>
+                        </center>
+                    </td>
+                </tr>
+                <tr style="width: 100%;">
+                    <td>
+                        <center>
+                            <table>
+                                <tr>
+                                    <td>
+                                        <input class="text_style" type="text" id="fname" name="fname" placeholder="שם" onkeypress="openPopup()">
+                                    </td>
+
+                                    <td>
+                                        <input class="text_style" type="text" id="lname" name="lname" placeholder="שם משפחה" onkeypress="openPopup()">
+                                    </td>
+                                    <td>
+                                        <input class="text_style" type="text" id="mail" name="mail" placeholder="מייל" onkeypress="openPopup()">
+                                    </td>
+                                    <td>
+                                        <input class="text_style" type="number" id="phone" name="phone" placeholder="טלפון" onkeypress="openPopup()">
+                                    </td>
+
+
+
+                                    <td width="20%">
+                                        <select class="text_style" name="event" id="event">
+                                            <option value="notSelected" disabled selected hidden>סוג אירוע</option>
+                                            <option value="wedd">חתונה</option>
+                                            <option value="sadna">סדנא</option>
+                                            <option value="bday">יומולדת</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <input class="button_style" type="button" id="b-clear" name="clear" value="נקה" onclick="cleanForm()">
+                                    </td>
+                                    <td>
+                                        <input class="button_style" type="button" id="b-send" name="send" value="שלח" onclick="verifyInput()">
+                                    </td>
+                                </tr>
+                            </table>
+                        </center>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+    </body>
+</html> 
